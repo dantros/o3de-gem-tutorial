@@ -1,0 +1,48 @@
+{
+    "project_name": "DinosaurExample",
+    "version": "1.0.0",
+    "project_id": "{111E07FE-8FC0-4DE2-AFD8-AEBC6E1C69CE}",
+    "origin": "The primary repo for DinosaurExample goes here: i.e. http://www.mydomain.com",
+    "license": "What license DinosaurExample uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "display_name": "DinosaurExample",
+    "summary": "A short description of DinosaurExample.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "DinosaurExample"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": [
+        "Gem"
+    ],
+    "restricted": "DinosaurExample",
+    "gem_names": [
+        "DinosaurExample",
+        "Atom",
+        "AudioSystem",
+        "AWSCore",
+        "CameraFramework",
+        "Compression",
+        "DebugDraw",
+        "DiffuseProbeGrid",
+        "EditorPythonBindings",
+        "EMotionFX",
+        "GameState",
+        "ImGui",
+        "LandscapeCanvas",
+        "LyShine",
+        "PhysX",
+        "PrimitiveAssets",
+        "PrefabBuilder",
+        "SaveData",
+        "ScriptCanvasPhysics",
+        "ScriptEvents",
+        "StartingPointInput",
+        "TextureAtlas",
+        "WhiteBox",
+        "ScriptCanvas"
+    ],
+    "engine_version": "23.05.0"
+}

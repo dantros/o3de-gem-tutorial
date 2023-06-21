@@ -1,0 +1,262 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Bird",
+        "Components": {
+            "Component_[10662284393439576798]": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 10662284393439576798
+            },
+            "Component_[11065269011048981000]": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 11065269011048981000
+            },
+            "Component_[12181543087933279139]": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 12181543087933279139,
+                "Child Entity Order": [
+                    "Entity_[69780961463420]"
+                ]
+            },
+            "Component_[13667079914560841631]": {
+                "$type": "EditorPrefabComponent",
+                "Id": 13667079914560841631
+            },
+            "Component_[17618213330228381388]": {
+                "$type": "EditorInspectorComponent",
+                "Id": 17618213330228381388
+            },
+            "Component_[4378094715531429031]": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 4378094715531429031
+            },
+            "Component_[7444880121120305409]": {
+                "$type": "EditorLockComponent",
+                "Id": 7444880121120305409
+            },
+            "Component_[8130573105028277402]": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 8130573105028277402
+            },
+            "Component_[8801422948813441750]": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 8801422948813441750,
+                "Parent Entity": ""
+            },
+            "Component_[9641748222905881439]": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 9641748222905881439
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[69780961463420]": {
+            "Id": "Entity_[69780961463420]",
+            "Name": "Bird",
+            "Components": {
+                "Component_[10633592035180232868]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 10633592035180232868
+                },
+                "Component_[11020244563334276808]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 11020244563334276808,
+                    "configuration": {
+                        "sourceHandle": {
+                            "id": "{94F8DEF8-4317-5E71-BFC6-17450C9CE038}",
+                            "path": "Scripts/enemyScript.scriptcanvas"
+                        },
+                        "sourceName": "enemyScript.scriptcanvas",
+                        "propertyOverrides": {
+                            "source": {
+                                "id": "{94F8DEF8-4317-5E71-BFC6-17450C9CE038}",
+                                "path": "Scripts/enemyScript.scriptcanvas"
+                            },
+                            "variables": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 3
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "double",
+                                        "value": -5.0
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{103FB784-9A7F-4E5D-832C-F7E4BCA99EFC}"
+                                    },
+                                    "VariableName": "speed",
+                                    "InitialValueSource": 1
+                                }
+                            ],
+                            "overrides": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 3
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "double",
+                                        "value": -12.0
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{103FB784-9A7F-4E5D-832C-F7E4BCA99EFC}"
+                                    },
+                                    "VariableName": "speed",
+                                    "InitialValueSource": 1
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Component_[12579765263220235751]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 12579765263220235751
+                },
+                "Component_[14566027474401318015]": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 14566027474401318015,
+                    "ColliderConfiguration": {
+                        "Trigger": true,
+                        "MaterialSlots": {
+                            "Slots": [
+                                {
+                                    "Name": "Entire object"
+                                }
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 1,
+                        "Box": {
+                            "Scale": [
+                                2.0,
+                                0.5,
+                                0.699999988079071
+                            ]
+                        },
+                        "HasNonUniformScale": true
+                    },
+                    "HasNonUniformScale": true
+                },
+                "Component_[15025682395590146288]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 15025682395590146288,
+                    "Parent Entity": "ContainerEntity"
+                },
+                "Component_[17642347649950824020]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 17642347649950824020,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 15025682395590146288
+                        },
+                        {
+                            "ComponentId": 9779426222700638856,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 11020244563334276808,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 18322452264123932090,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 18119837508777093620,
+                            "SortIndex": 4
+                        },
+                        {
+                            "ComponentId": 412502297137012391,
+                            "SortIndex": 5
+                        },
+                        {
+                            "ComponentId": 14566027474401318015,
+                            "SortIndex": 6
+                        }
+                    ]
+                },
+                "Component_[17789437574876390271]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17789437574876390271
+                },
+                "Component_[18119837508777093620]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 18119837508777093620,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": {
+                                "{}": {
+                                    "MaterialAsset": {
+                                        "assetId": {
+                                            "guid": "{826D3CF6-FD6B-5929-A382-734BD771250E}"
+                                        },
+                                        "assetHint": "materials/birdm.azmaterial"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Component_[18322452264123932090]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 18322452264123932090,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
+                                    "subId": 284301017
+                                },
+                                "assetHint": "objects/_primitives/_box_1x1.azmodel"
+                            }
+                        }
+                    }
+                },
+                "Component_[3409827121917555655]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 3409827121917555655
+                },
+                "Component_[412502297137012391]": {
+                    "$type": "EditorRigidBodyComponent",
+                    "Id": 412502297137012391,
+                    "Configuration": {
+                        "entityId": "",
+                        "Gravity Enabled": false,
+                        "Compute Mass": false,
+                        "Lock Angular X": true,
+                        "Lock Angular Y": true,
+                        "Lock Angular Z": true
+                    }
+                },
+                "Component_[4509183105814348977]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 4509183105814348977
+                },
+                "Component_[5278903452944296192]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5278903452944296192
+                },
+                "Component_[733456612879453456]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 733456612879453456
+                },
+                "Component_[9779426222700638856]": {
+                    "$type": "EditorNonUniformScaleComponent",
+                    "Id": 9779426222700638856,
+                    "NonUniformScale": [
+                        2.0,
+                        0.5,
+                        0.699999988079071
+                    ]
+                }
+            }
+        }
+    }
+}

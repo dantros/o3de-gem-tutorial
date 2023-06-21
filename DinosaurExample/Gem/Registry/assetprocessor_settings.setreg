@@ -1,0 +1,18 @@
+{
+    "Amazon": {
+        "AssetProcessor": {
+            "Settings": {
+                "ScanFolder DinosaurExample/Assets": {
+                    "watch": "@GEMROOT:DinosaurExample@/Assets",
+                    "recursive": 1,
+                    "order": 101
+                },
+                "ScanFolder DinosaurExample/Registry": {
+                    "watch": "@GEMROOT:DinosaurExample@/Registry",
+                    "recursive": 1,
+                    "order": 102
+                }
+            }
+        }
+    }
+}
