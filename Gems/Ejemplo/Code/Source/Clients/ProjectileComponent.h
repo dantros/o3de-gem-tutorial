@@ -2,6 +2,7 @@
 
 #include <AzCore/Component/Component.h>
 #include <Ejemplo/ProjectileComponentBus.h>
+#include <AzCore/Math/Vector3.h>
 
 namespace Ejemplo
 {
@@ -21,10 +22,12 @@ namespace Ejemplo
 		static void Reflect(AZ::ReflectContext* reflection);
 
 		// Hacer override de los metodos a reflejar en Script Canvas. declarados en el EBus
-		//void example() override;
+		void ThrowEntity() override;
 
 		// Que otros componentes necesita este componente
-		//static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& req);
-;
+		static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& req);
+	private:
+		AZ::Vector3 mThrowDirection;
+		float mForce;
 	};
 }

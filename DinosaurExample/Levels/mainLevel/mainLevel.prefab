@@ -1660,17 +1660,43 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 10256455740531949315
                 },
+                "Component_[10881894332459600302]": {
+                    "$type": "EditorMeshColliderComponent",
+                    "Id": 10881894332459600302,
+                    "ColliderConfiguration": {
+                        "MaterialSlots": {
+                            "Slots": [
+                                {
+                                    "Name": "lambert3"
+                                }
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "PhysicsAsset": {
+                            "Asset": {
+                                "assetId": {
+                                    "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
+                                    "subId": 1801833720
+                                },
+                                "assetHint": "objects/_primitives/_sphere_1x1.pxmesh"
+                            },
+                            "Configuration": {
+                                "PhysicsAsset": {
+                                    "assetId": {
+                                        "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
+                                        "subId": 1801833720
+                                    },
+                                    "loadBehavior": "QueueLoad",
+                                    "assetHint": "objects/_primitives/_sphere_1x1.pxmesh"
+                                }
+                            }
+                        }
+                    }
+                },
                 "Component_[11869751246463524126]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 11869751246463524126
-                },
-                "Component_[13156411942273483722]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 13156411942273483722,
-                    "m_template": {
-                        "$type": "TestComponent",
-                        "To Print": 25.0
-                    }
                 },
                 "Component_[14283098070461592903]": {
                     "$type": "EditorLockComponent",
@@ -1705,7 +1731,7 @@
                     "Parent Entity": "Entity_[1146574390643]",
                     "Transform Data": {
                         "Translate": [
-                            6.2884111404418945,
+                            -2.293389320373535,
                             0.0,
                             1.641237735748291
                         ]
@@ -1739,6 +1765,43 @@
                 "Component_[538860814861723220]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 538860814861723220
+                },
+                "Component_[6578481534277282486]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 6578481534277282486,
+                    "m_template": {
+                        "$type": "ProjectileComponent",
+                        "Throw direction": [
+                            1.0,
+                            0.0,
+                            1.0
+                        ],
+                        "Throw force": 10.0
+                    }
+                },
+                "Component_[7005313805738151108]": {
+                    "$type": "EditorRigidBodyComponent",
+                    "Id": 7005313805738151108,
+                    "Configuration": {
+                        "entityId": "",
+                        "Compute Mass": false,
+                        "Centre of mass offset": [
+                            -3.209227605882603e-10,
+                            5.215969167693402e-8,
+                            4.5421448720273094e-12
+                        ],
+                        "Inertia tensor": [
+                            0.10000001639127731,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.10000001639127731,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.10000001639127731
+                        ]
+                    }
                 }
             }
         }

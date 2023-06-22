@@ -11,7 +11,8 @@ namespace Ejemplo
 	public:
 
 		// Poner aca la declaracion de los metodos a reflejar en Script Canvas
-		//virtual void example() = 0;
+
+		virtual void ThrowEntity() = 0;
 	};
 
 	using ProjectileComponentRequestBus = AZ::EBus<ProjectileComponentBus>;
