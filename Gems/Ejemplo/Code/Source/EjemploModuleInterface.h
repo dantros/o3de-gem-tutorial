@@ -1,7 +1,7 @@
 
 #include <AzCore/Memory/SystemAllocator.h>
 
-#include "TestComponent.h"
+#include "Clients/TestComponent.h"
 
 #include <AzCore/Module/Module.h>
 #include <Clients/EjemploSystemComponent.h>
