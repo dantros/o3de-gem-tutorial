@@ -31,9 +31,22 @@ void TestComponent::Reflect(AZ::ReflectContext* reflection)
 void TestComponent::Activate()
 {
 	AZ_Printf("TestComponent", "Iniciando Test Component con float: %f", m_toPrint);
+
+	// We must connect, otherwise OnTick() will never be called.
+	// Forgetting this call is the common error in O3DE!
+	AZ::TickBus::Handler::BusConnect();
 }
 
 void TestComponent::Deactivate()
 {
 	AZ_Printf("TestComponent", "Finalizando Test Component");
+
+	// good practice on cleanup to disconnect
+	AZ::TickBus::Handler::BusDisconnect();
+}
+
+// Se ejecuta en cada frame
+void TestComponent::OnTick(float dt, AZ::ScriptTimePoint)
+{
+	AZ_Printf("TestComponent", "-> Imprimiendo en cada frame, dt: %f", dt);
 }
