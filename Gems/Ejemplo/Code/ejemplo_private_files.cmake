@@ -7,4 +7,5 @@ set(FILES
 
     Source/Clients/TestComponent.cpp # New
     Source/Clients/TestComponent.h   # New
+    Include/Ejemplo/TestComponentBus.h  # New
 )

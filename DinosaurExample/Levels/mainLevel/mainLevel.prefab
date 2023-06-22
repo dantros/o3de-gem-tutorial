@@ -1715,6 +1715,23 @@
                     "$type": "EditorDisabledCompositionComponent",
                     "Id": 3613950762620880973
                 },
+                "Component_[4195040276025287195]": {
+                    "$type": "EditorScriptCanvasComponent",
+                    "Id": 4195040276025287195,
+                    "configuration": {
+                        "sourceHandle": {
+                            "id": "{B9899FAC-EA31-5B88-9923-9679421003D2}",
+                            "path": "Scripts/ballScript.scriptcanvas"
+                        },
+                        "sourceName": "ballScript.scriptcanvas",
+                        "propertyOverrides": {
+                            "source": {
+                                "id": "{B9899FAC-EA31-5B88-9923-9679421003D2}",
+                                "path": "Scripts/ballScript.scriptcanvas"
+                            }
+                        }
+                    }
+                },
                 "Component_[5237252539525863326]": {
                     "$type": "EditorEntityIconComponent",
                     "Id": 5237252539525863326
