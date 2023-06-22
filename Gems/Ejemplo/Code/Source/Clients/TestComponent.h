@@ -28,6 +28,12 @@ namespace Ejemplo
 		// declaracion de la funcion que se llamara desde ScriptCanvas
 		void dummyPrint(const char* value) override;
 
+		// Mueve a la entidad que tiene este componente
+		void MoveEntity(AZ::Vector3 position) override;
+
+		// Que otros componentes necesita este componente
+		static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& req);
+
 	private:
 		float m_toPrint;
 	};

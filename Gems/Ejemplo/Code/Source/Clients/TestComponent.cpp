@@ -2,6 +2,7 @@
 
 #include <AzCore/Serialization/EditContext.h>
 #include <AzCore/RTTI/BehaviorContext.h>
+#include <AzCore/Component/TransformBus.h>
 
 using namespace Ejemplo;
 
@@ -33,7 +34,8 @@ void TestComponent::Reflect(AZ::ReflectContext* reflection)
 	{
 		behaviorContext->EBus<TestComponentRequestBus>("Test Co", "TestComponentRequestBus")
 			->Attribute(AZ::Script::Attributes::Category, "Gem ejemplo")
-			->Event("dummyPrint1", &TestComponentRequestBus::Events::dummyPrint);
+			->Event("dummyPrint1", &TestComponentRequestBus::Events::dummyPrint)
+			->Event("MoveEntity", &TestComponentRequestBus::Events::MoveEntity);
 
 		//behaviorContext->Class<TestComponent>()->RequestBus("TestComponentRequestBus");
 	}
@@ -47,7 +49,7 @@ void TestComponent::Activate()
 
 	// We must connect, otherwise OnTick() will never be called.
 	// Forgetting this call is the common error in O3DE!
-	AZ::TickBus::Handler::BusConnect();
+	//AZ::TickBus::Handler::BusConnect();
 
 	// Hay que conectar el bus del componente
 	TestComponentRequestBus::Handler::BusConnect(GetEntityId());
@@ -58,7 +60,7 @@ void TestComponent::Deactivate()
 	AZ_Printf("TestComponent", "Finalizando Test Component");
 
 	// good practice on cleanup to disconnect
-	AZ::TickBus::Handler::BusDisconnect();
+	//AZ::TickBus::Handler::BusDisconnect();
 
 	TestComponentRequestBus::Handler::BusDisconnect(GetEntityId());
 }
@@ -73,4 +75,23 @@ void TestComponent::OnTick(float dt, AZ::ScriptTimePoint)
 void TestComponent::dummyPrint(const char* value)
 {
 	AZ_Printf("TestComponent", "-> Imprimiendo desde Script Canvas, valor: %s", value);
+}
+
+// Mueve a la entidad que tiene este componente
+void TestComponent::MoveEntity(AZ::Vector3 position)
+{
+	// get current position
+	AZ::Vector3 currentPosition;
+	AZ::TransformBus::EventResult(currentPosition, GetEntityId(), &AZ::TransformBus::Events::GetWorldTranslation);
+	AZ_Printf("TestComponent", "-> Posicion actual: %f, %f, %f", currentPosition.GetX(), currentPosition.GetY(), currentPosition.GetZ());
+
+	// Moves to the new position
+	AZ::TransformBus::Event(GetEntityId(), &AZ::TransformBus::Events::SetWorldTranslation, position);
+	AZ_Printf("TestComponent", "-> Posicion nueva: %f, %f, %f", position.GetX(), position.GetY(), position.GetZ());
+}
+
+void TestComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& req)
+{
+	// Necesitamos a TransformComponent
+	req.push_back(AZ_CRC_CE("TransformService"));
 }
