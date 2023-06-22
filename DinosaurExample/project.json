@@ -15,7 +15,8 @@
     "icon_path": "preview.png",
     "engine": "o3de",
     "external_subdirectories": [
-        "Gem"
+        "Gem" ,
+        "C:/Users/sebam/projects/gems-tutorial/Gems/Ejemplo"
     ],
     "restricted": "DinosaurExample",
     "gem_names": [
@@ -42,7 +43,8 @@
         "StartingPointInput",
         "TextureAtlas",
         "WhiteBox",
-        "ScriptCanvas"
+        "ScriptCanvas",
+        "Ejemplo"
     ],
     "engine_version": "23.05.0"
 }
