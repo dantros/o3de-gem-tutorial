@@ -1323,6 +1323,13 @@
                     },
                     "HasNonUniformScale": true
                 },
+                "Component_[13890336405425845131]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 13890336405425845131,
+                    "m_template": {
+                        "$type": "TestComponent"
+                    }
+                },
                 "Component_[15048469835170332353]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 15048469835170332353

@@ -23,3 +23,13 @@ void TestComponent::Reflect(AZ::ReflectContext* reflection)
 		->Attribute(AppearsInAddComponentMenu, AZ_CRC("Game")) // Necesario para que funcione el componente
 		->Attribute(Category, "Gem Ejemplo"); // Categoria del componente que se muestra en el buscador de componentes
 }
+
+void TestComponent::Activate()
+{
+	AZ_Printf("TestComponent", "Iniciando Test Component");
+}
+
+void TestComponent::Deactivate()
+{
+	AZ_Printf("TestComponent", "Finalizando Test Component");
+}
