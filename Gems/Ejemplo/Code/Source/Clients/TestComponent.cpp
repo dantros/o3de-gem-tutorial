@@ -11,7 +11,9 @@ void TestComponent::Reflect(AZ::ReflectContext* reflection)
 	if (!sc) return;
 
 	sc->Class<TestComponent, Component>() // No tiene propiedades
-		->Version(1);                     // Numero de version
+		// serialize m_amplitude
+		->Field("To Print", &TestComponent::m_toPrint)
+		->Version(2);                  // Numero de version
 
 	AZ::EditContext* ec = sc->GetEditContext();
 	if (!ec) return;
@@ -21,12 +23,14 @@ void TestComponent::Reflect(AZ::ReflectContext* reflection)
 	ec->Class<TestComponent>("Test Component", "[Componente para testear]") // Nombre, descripcion
 		->ClassElement(AZ::Edit::ClassElements::EditorData, "")
 		->Attribute(AppearsInAddComponentMenu, AZ_CRC("Game")) // Necesario para que funcione el componente
-		->Attribute(Category, "Gem Ejemplo"); // Categoria del componente que se muestra en el buscador de componentes
+		->Attribute(Category, "Gem Ejemplo") // Categoria del componente que se muestra en el buscador de componentes
+		// expose the setting to the editor
+		->DataElement(nullptr, &TestComponent::m_toPrint, "To Print", "[Float a printear al principio]");
 }
 
 void TestComponent::Activate()
 {
-	AZ_Printf("TestComponent", "Iniciando Test Component");
+	AZ_Printf("TestComponent", "Iniciando Test Component con float: %f", m_toPrint);
 }
 
 void TestComponent::Deactivate()

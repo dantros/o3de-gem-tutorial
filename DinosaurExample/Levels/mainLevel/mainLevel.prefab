@@ -1327,7 +1327,8 @@
                     "$type": "GenericComponentWrapper",
                     "Id": 13890336405425845131,
                     "m_template": {
-                        "$type": "TestComponent"
+                        "$type": "TestComponent",
+                        "To Print": 10.0
                     }
                 },
                 "Component_[15048469835170332353]": {

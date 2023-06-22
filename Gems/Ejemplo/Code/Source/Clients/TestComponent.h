@@ -15,5 +15,8 @@ namespace Ejemplo
 		
 		// Provide runtime reflection, if any
 		static void Reflect(AZ::ReflectContext* reflection);
+
+	private:
+		float m_toPrint;
 	};
 }
