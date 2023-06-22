@@ -1754,7 +1754,46 @@
                             "source": {
                                 "id": "{B9899FAC-EA31-5B88-9923-9679421003D2}",
                                 "path": "Scripts/ballScript.scriptcanvas"
-                            }
+                            },
+                            "variables": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 3
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "double",
+                                        "value": 1.0
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{87B4DB07-AFC7-4023-8BEE-41678E9D8E58}"
+                                    },
+                                    "VariableName": "Throw time",
+                                    "InitialValueSource": 1
+                                }
+                            ],
+                            "overrides": [
+                                {
+                                    "Datum": {
+                                        "isOverloadedStorage": false,
+                                        "scriptCanvasType": {
+                                            "m_type": 3
+                                        },
+                                        "isNullPointer": false,
+                                        "$type": "double",
+                                        "value": 3.0
+                                    },
+                                    "InputControlVisibility": {
+                                        "Value": 850104567
+                                    },
+                                    "VariableId": {
+                                        "m_id": "{87B4DB07-AFC7-4023-8BEE-41678E9D8E58}"
+                                    },
+                                    "VariableName": "Throw time",
+                                    "InitialValueSource": 1
+                                }
+                            ]
                         }
                     }
                 },
