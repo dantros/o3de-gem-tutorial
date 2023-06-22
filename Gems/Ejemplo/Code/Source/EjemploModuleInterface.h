@@ -1,5 +1,8 @@
 
 #include <AzCore/Memory/SystemAllocator.h>
+
+#include "TestComponent.h"
+
 #include <AzCore/Module/Module.h>
 #include <Clients/EjemploSystemComponent.h>
 
@@ -20,6 +23,7 @@ namespace Ejemplo
             // This happens through the [MyComponent]::Reflect() function.
             m_descriptors.insert(m_descriptors.end(), {
                 EjemploSystemComponent::CreateDescriptor(),
+                TestComponent::CreateDescriptor(),
                 });
         }
 
