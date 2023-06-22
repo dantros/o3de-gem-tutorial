@@ -2,6 +2,7 @@
 #include <AzCore/Memory/SystemAllocator.h>
 
 #include "Clients/TestComponent.h"
+#include "Clients/ProjectileComponent.h"
 
 #include <AzCore/Module/Module.h>
 #include <Clients/EjemploSystemComponent.h>
@@ -24,6 +25,7 @@ namespace Ejemplo
             m_descriptors.insert(m_descriptors.end(), {
                 EjemploSystemComponent::CreateDescriptor(),
                 TestComponent::CreateDescriptor(),
+                ProjectileComponent::CreateDescriptor(),
                 });
         }
 
