@@ -13,10 +13,10 @@
         "DinosaurExample"
     ],
     "icon_path": "preview.png",
-    "engine": "o3de",
+    "engine": "o3de-sdk",
     "external_subdirectories": [
-        "Gem" ,
-        "C:/Users/sebam/projects/gems-tutorial/Gems/Ejemplo"
+        "Gem",
+        "../Gems/Ejemplo"
     ],
     "restricted": "DinosaurExample",
     "gem_names": [
@@ -46,5 +46,5 @@
         "ScriptCanvas",
         "Ejemplo"
     ],
-    "engine_version": "23.05.0"
+    "engine_version": "2.2.2"
 }
